@@ -1,0 +1,19 @@
+name: DevOps CI Pipeline
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Run Shell Script Check
+        run: |
+          echo "Checking scripts..."
+          bash app/main.sh
