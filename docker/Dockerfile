@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-WORKDIR /opt/app
+WORKDIR /opd/app
 
 COPY app/main.sh .
 
