@@ -16,4 +16,4 @@ jobs:
       - name: Run Shell Script Check
         run: |
           echo "Checking scripts..."
-          bash app/main.sh
+          bash app/start.sh
